@@ -2,7 +2,7 @@ import telebot
 import xlsxwriter
 import datetime as dt
 from telebot import types
-joinedFile = open("C:/Users/ivank/PycharmProjects/Telegram_bot_earn/joined.txt", "r")
+joinedFile = open("")
 joinedUsers = set()
 for line in joinedFile:
     joinedUsers.add(line.strip())
@@ -18,7 +18,7 @@ worksheet.write(0, 3, 'Відправник')
 worksheet.write(0, 4, 'ID відправника')
 worksheet.write(0, 5, 'Повідомлення та ID стікера')
 worksheet.write(0, 6, 'Емоція стікера')
-bot = telebot.TeleBot('5910817033:AAHzYLO7l80xCSp-zSDj-BgbfacmxEpkEL8')
+bot = telebot.TeleBot('')
 
 
 @bot.message_handler(commands=['start'])
